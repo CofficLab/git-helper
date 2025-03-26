@@ -21,7 +21,7 @@
 #   * NPM_TOKEN: npm 发布令牌
 #   * GH_TOKEN: GitHub 个人访问令牌，用于创建 Release
 
-name: Publish @gitok/plugin-git-helper
+name: Publish
 
 on:
   push:
