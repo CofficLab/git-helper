@@ -1,6 +1,6 @@
 {
   "name": "@gitok/plugin-git-helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "GitOK插件 - Git仓库状态检查与自动提交推送",
   "main": "dist/index.js",
   "scripts": {
