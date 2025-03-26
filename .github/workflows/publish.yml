@@ -1,4 +1,4 @@
-# 发布 @gitok/plugin-git-helper 包的 GitHub Actions 工作流
+# 发布 @coffic/git-helper 包的 GitHub Actions 工作流
 #
 # 功能：
 # - 监听项目的代码变更
@@ -84,15 +84,15 @@ jobs:
         run: |
           git add package.json
           git commit -m "chore(git-helper): bump version to ${{ steps.version.outputs.new_version }}"
-          git tag "git-helper-v${{ steps.version.outputs.new_version }}"
+          git tag "v${{ steps.version.outputs.new_version }}"
           git push
           git push --tags
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: 'git-helper-v${{ steps.version.outputs.new_version }}'
-          name: '@gitok/plugin-git-helper v${{ steps.version.outputs.new_version }}'
+          tag_name: 'v${{ steps.version.outputs.new_version }}'
+          name: 'v${{ steps.version.outputs.new_version }}'
           body: |
             ## 版本变更
 
